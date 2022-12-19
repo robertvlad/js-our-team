@@ -1,6 +1,6 @@
 //MILESTONE 0: Creare l’array di oggetti con le informazioni fornite.
 
-const teams = [
+const team = [
     {
         name: "Wayner Barnett",
         role: "Founder & CEO",
@@ -36,8 +36,14 @@ const teams = [
 
 //MILESTONE 1: Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 
+for (let i = 0; i < team.length; i++){
+    
+    let member = team[i];
 
-
+    for(let key in member){
+        console.log(member[key]);
+    }
+}
 
 
 //MILESTONE 2: Stampare le stesse informazioni su DOM sottoforma di stringhe
