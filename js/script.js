@@ -47,3 +47,16 @@ for (let i = 0; i < team.length; i++){
 
 
 //MILESTONE 2: Stampare le stesse informazioni su DOM sottoforma di stringhe
+
+const ul_list = document.getElementById("team-list");
+
+for (let i = 0; i < team.length; i++){
+
+    let member = team[i];
+    
+    let list_item = `<li>${member.name} - ${member.role} - ${member.image}</li>`;
+
+    ul_list.innerHTML += list_item;
+ 
+}
+
