@@ -59,4 +59,3 @@ for (let i = 0; i < team.length; i++){
     ul_list.innerHTML += list_item;
  
 }
-
